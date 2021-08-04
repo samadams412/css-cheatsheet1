@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(59, 57, 57);
+}
+
+header, footer{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    color: white;
+}
+
+header h1{
+    color: plum;
+    font-weight: bold;
+}
+
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    justify-content: center;
+    align-self: auto;
+    
+}
+
+section div{
+    color: plum;
+    flex: auto;
+    border: white dashed 2px;
+    margin: 20px;
+    padding: 15px;
+}
+section div h2{
+    border: white solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align:left;
+    position: relative;
+    top: -35px;
+    background-color: rgb(59, 57, 57);
+    margin: 10px;
+}
+section div p{
+    
+    padding: 5px;
+    position: relative;
+    top: -30px;
+}
+
+
+.code{
+    background-image: linear-gradient(rgba(110, 42, 131, 0.418),rgb(110, 42, 131));
+    border-radius: 8px;
+    transition: all .75s ease-in-out;
+    border: none;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+    position: relative;
+    top: -30px;
+}
+
+code{
+    -webkit-user-select: all;
+    user-select: all;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    font-family: inherit;
+    overflow: auto;
+}
+
+code:focus{
+    animation: select 100ms step-end forwards;
+}
+
+/*allows user to click a second time to select only parts of text as normal */
+@keyframes select {
+    to{
+        -webkit-user-select: text;
+        user-select: text;
+    }
+    
+}
+
+.glow:hover{
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+
+.glow:hover h2{
+    box-shadow: inset 0px 0px 8px
+   rgba(232, 102, 236, 1), 0 0 15px
+   rgba(232, 102, 236, 1);
+}
